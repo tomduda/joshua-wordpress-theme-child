@@ -109,7 +109,7 @@ global $more;
 
 /*  **** Portfolio overview Begin *********** */ -->
 
-<div id="par-box3" ><h2 class="hide">About Me</h2></div>
+<div id="par-box1" ><h2 class="hide">About Me</h2></div>
 
 <div id="prlx_lyr_3"></div>
 
@@ -172,7 +172,7 @@ global $more;
 
     ?>
 
-    <div id="par-box1" ><h2 class="hide">Testimonials</h2></div>
+    <div id="par-box2" ><h2 class="hide">Testimonials</h2></div>
 
     <div id="prlx_lyr_1"></div>
 
@@ -192,7 +192,7 @@ global $more;
             if ( $query->have_posts() ) :
 
                 echo '<ul class="testimonials">';
-
+            $i = 0;
             while ( $query->have_posts() ) :
 
                 $query->the_post();
@@ -200,7 +200,7 @@ global $more;
             $more = 0;
             ?>
 
-            <li class="clear">
+            <li class="clear testimonial-box-<?php echo $i ?>">
                 <figure class="testimonial-thumb">
                     <?php        
                     the_post_thumbnail('testimonial-mug');
@@ -225,7 +225,8 @@ global $more;
                     echo '</aside>';
 
                     echo '</li>';
-
+                    // incriment counter to add to testimonial-box div
+                    $i += 1;
                     endwhile;
 
                     echo '</ul>';
@@ -244,7 +245,7 @@ global $more;
 
             <!-- Resume section -->
 
-            <div id="par-box4" ><h2 class="hide">Resume</h2></div>
+            <div id="par-box3" ><h2 class="hide">Resume</h2></div>
 
             <div id="prlx_lyr_4"></div>
 
@@ -295,7 +296,7 @@ global $more;
                     <main id="main" class="site-main" role="main">
 
 
-                        <div id="par-box2" ><h2 class="hide">Contact Information</h2></div>
+                        <div id="par-box4" ><h2 class="hide">Contact Information</h2></div>
 
                         <div id="prlx_lyr_2"></div>
 

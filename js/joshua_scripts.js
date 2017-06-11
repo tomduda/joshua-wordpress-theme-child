@@ -39,32 +39,44 @@ $(function() {
 	jQuery(document).ready(function($){
 		$(window).scroll(function(){
 			var scroll_top = $(window).scrollTop();
-			var position = $("#par-box3").position();
 			var position1 = $("#par-box1").position();
 			var position2 = $("#par-box2").position();
+			var position3 = $("#par-box3").position();
 			var position4 = $("#par-box4").position();
 			var position5 = $("section#meet").position();
+			var position6 = $("section#testimonials").position();
+
+		// handles the section introduction heading animation
 			
-		if(scroll_top > position.top - 500){
-			$("#par-box3 h2").removeClass("hide");
-			
-		};
 		if(scroll_top > position1.top - 500){
-			$("#par-box1 h2").removeClass("hide");
+			$("#par-box1 h2").removeClass("hide");			
 		}
-		if(scroll_top > position4.top - 500){
-			$("#par-box4 h2").removeClass("hide");
-		}
-		if(scroll_top > position2.top - 750){
+		 if(scroll_top > position2.top - 500){
 			$("#par-box2 h2").removeClass("hide");
 		}
+		if(scroll_top > position3.top - 500){
+			$("#par-box3 h2").removeClass("hide");
+		}
+		if(scroll_top > position4.top - 1000){
+			$("#par-box4 h2").removeClass("hide");
+		}
+		// Handles the contents of the "About Me" section animation
 		if(scroll_top > position5.top - 750){
 			$(".about-tom-text-0").animate({opacity: 1
 			}, 900);
-		$(".about-tom-text-1").animate({opacity: 1
-		    }, 1800);
-		$(".about-tom-text-2").animate({opacity: 1
-		    }, 2100);
+			$(".about-tom-text-1").animate({opacity: 1
+			    }, 1800);
+			$(".about-tom-text-2").animate({opacity: 1
+			    }, 2100);
+		}
+		// Handles the contents of the testimonial section boxes animation
+		if(scroll_top > position6.top - 750){
+			$(".testimonial-box-0").animate({opacity: 1
+			}, 900);
+			$(".testimonial-box-1").animate({opacity: 1
+			    }, 1800);
+			$(".testimonial-box-2").animate({opacity: 1
+			    }, 2100);
 
 	}
 

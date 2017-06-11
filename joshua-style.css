@@ -183,6 +183,11 @@
 	width: 100%;
 
 }
+.testimonial-box-0, .testimonial-box-1, .testimonial-box-2{
+
+	opacity: 0;
+	
+}
 
 
 	/* TESTIMONIALS RESPONSIVE */ 
@@ -491,6 +496,12 @@
 */	
 }
 
+#par-box2 h2{
+	animation: about-tom 2s ease-in-out 0s 1;
+/*	animation-iteration-count: 4;
+*/	
+}
+
 #par-box3 h2{
 	animation: about-tom 2s ease-in-out 0s 1;
 /*	animation-iteration-count: 4;
@@ -532,18 +543,22 @@
 }
 }
 
-#par-box3 h2.hide{
-	opacity: 0;
-	display: none;
-}
-
 #par-box1 h2.hide{
 	opacity: 0;
 	display: none;
 }
-#par-box4 h2.hide{
-	opacity: 0;
-	display: none;
+
+#par-box2 h2.hide{
+	/*opacity: 0;
+	display: none;*/
+}
+#par-box3 h2.hide{
+	/*opacity: 0;
+	display: none;*/
+}
+#par-box3 h2.hide{
+	/*opacity: 0;
+	display: none;*/
 }
 
 #par-box1 h2:before, #par-box2 h2:before, #par-box3 h2:before, #par-box4 h2:before{        
