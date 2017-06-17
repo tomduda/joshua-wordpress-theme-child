@@ -38,11 +38,14 @@ $(function() {
 	
 	jQuery(document).ready(function($){
 		$(window).scroll(function(){
+			// variables to handle catagorie slide in effects
 			var scroll_top = $(window).scrollTop();
 			var position1 = $("#par-box1").position();
 			var position2 = $("#par-box2").position();
 			var position3 = $("#par-box3").position();
 			var position4 = $("#par-box4").position();
+
+			// Variables for "about tom" box animations
 			var position5 = $("section#meet").position();
 			var position6 = $("section#testimonials").position();
 
@@ -64,20 +67,24 @@ $(function() {
 		if(scroll_top > position5.top - 750){
 			$(".about-tom-text-0").animate({opacity: 1
 			}, 900);
+			
+
 			$(".about-tom-text-1").animate({opacity: 1
 			    }, 1800);
+			
 			$(".about-tom-text-2").animate({opacity: 1
 			    }, 2100);
+			
 		}
 		// Handles the contents of the testimonial section boxes animation
 		if(scroll_top > position6.top - 750){
 			$(".testimonial-box-0").animate({opacity: 1
 			}, 900);
+
 			$(".testimonial-box-1").animate({opacity: 1
 			    }, 1800);
 			$(".testimonial-box-2").animate({opacity: 1
 			    }, 2100);
-
 	}
 
 		
@@ -96,6 +103,7 @@ $(function() {
 	});
 
 	// jQuery(document).ready(function($){
+
 	// 	$('.main-navigation li a').click(function(){
 	// 		$('this').removeClass('site-navigation');
 	// 	})

@@ -58,6 +58,7 @@ wp_enqueue_script('parallax_script' , get_stylesheet_directory_uri()  . '/js/par
 add_action('wp_enqueue_scripts', 'joshua_scripts');
 add_image_size('testimonial-mug', 253,253,true);
 
+// prevent testimonials from displaying in blog posts
 
 
 function exclude_testimonials( $query){

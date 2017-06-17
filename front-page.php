@@ -10,7 +10,7 @@ global $more;
 ?>
 
 
-<!-- Website portfolio section or Services -->
+<!-- *******************************Website portfolio section or Services******************************* -->
 
 <section id="services">
 
@@ -103,11 +103,7 @@ global $more;
 
 </section> 
 
-<!-- **** Website design information end *********** */
-
-/* ============================================================================== */
-
-/*  **** Portfolio overview Begin *********** */ -->
+<!--****************************************************************** Portfolio overview Begin ************************************************************************* */ -->
 
 <div id="par-box1" ><h2 class="hide">About Me</h2></div>
 
@@ -166,11 +162,10 @@ global $more;
 
     </section><!-- #meet -->
 
-    <?php
+    
 
-    /* ********************** Testimonials Begin ********************** */
+    <!-- ***************************************************** Testimonials Begin ******************************************************************************** */ -->
 
-    ?>
 
     <div id="par-box2" ><h2 class="hide">Testimonials</h2></div>
 
@@ -243,7 +238,7 @@ global $more;
 
             </section><!-- #testimonials -->
 
-            <!-- Resume section -->
+            <!-- *******************************Resume section**************************************************************-->
 
             <div id="par-box3" ><h2 class="hide">Resume</h2></div>
 
@@ -289,7 +284,7 @@ global $more;
                 </section><!-- #contact -->
 
 
-                <!-- Contact information section -->
+                <!-- **************************************************************Contact information section************************************************************** -->
 
                 <div id="primary" class="content-area joshua-page" >
 
@@ -343,7 +338,7 @@ global $more;
 
                 </div><!-- #primary -->
 
-                <!-- Footer section begins -->
+                <!-- **************************************************************Footer section begins************************************************************** -->
 
                 <?php get_footer(); ?>
 

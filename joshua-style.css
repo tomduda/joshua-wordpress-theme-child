@@ -29,11 +29,8 @@
  	padding: 0;    
  	margin: 0;
  }
-/*section#contact.entry-content{
-	border: 1px solid black;
-	background: rgba(0,0,0,.1) !important;
-}
-*/
+
+
 
  .entry-content h4{    
  	color: black;
@@ -44,6 +41,7 @@
  	max-width: 1000px;    
  	margin: 0 auto;
  	display: flex;
+ 	flex-wrap: wrap;
  }
 
  .front-left,.front-right {    
@@ -249,33 +247,38 @@
 
 }
 .about-tom-text-0, .about-tom-text-1, .about-tom-text-2{
-	opacity: 0
+	opacity: 0;
+	min-width: 200px;
 }
 
-
-/* The numerical suffix added via main loop in the front-page.php*/
-/*.about-tom-text-0{
-
-	animation: about-tom-meet 2s ease-in-out;
-	animation-delay: 1s;
+.about-tom-text-0 h3, .about-tom-text-1 h3, .about-tom-text-2 h3{
+	left: -100px;
+	right: -100px;
 	
+	margin-left: 0;
 }
-.about-tom-text-1{
-	animation: about-tom-meet 2s ease-in-out;
-	animation-delay: 2s;
-	
-}
-.about-tom-text-2{
-	animation: about-tom-meet 2s ease-in-out;
-	animation-delay: 3s;
-	
-}*/
-
 .about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p{
 	
 	
     margin: 1em;
 
+}
+@media screen and (max-width: 950px) {    
+	.about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
+		 font-size: .9em;
+		 padding-top: .2em;
+	}
+	.about-tom-text-0 h3, .about-tom-text-1 h3, .about-tom-text-2 h3{
+		font-size: 1em;
+		padding: .9em ;
+	}
+}
+@media screen and (max-width: 740px) {    
+	.about-tom-text-0 p, .about-tom-text-1 p, .about-tom-text-2 p {        
+		 font-size: .5em;
+		 padding-top: .2em;
+	}
+	
 }
 
 .about-tom-name{
@@ -417,6 +420,16 @@
 #meet p, #meet h1, #meet h2, #meet h3,#meet a:link, #meet a:visited, #meet a:hover, #meet a:active{
 	color: white; 
 	text-decoration: none;
+	
+
+	}
+
+	#meet h3{
+	
+	
+	margin-bottom: : 3em ;
+	
+	
 	}
 	/* CONTACT */
 #contact {    
@@ -436,6 +449,11 @@
 #contact p, #contact h2, #contact h6, #contact h3 {    
 	color: white;
 }
+section#contact.entry-content{
+ 	background: red !important
+ 	;
+ }
+
 #services{    
 	background: #235379;     
 	
@@ -490,33 +508,17 @@
 
 }
 
-#par-box1 h2{
-	animation: about-tom 2s ease-in-out 0s 1;
+#par-box1 h2, #par-box2 h2,#par-box3 h2,#par-box4 h2{
+	animation: about-tom 3s ease-in-out 0s 1;
 /*	animation-iteration-count: 4;
 */	
 }
 
-#par-box2 h2{
-	animation: about-tom 2s ease-in-out 0s 1;
-/*	animation-iteration-count: 4;
-*/	
-}
-
-#par-box3 h2{
-	animation: about-tom 2s ease-in-out 0s 1;
-/*	animation-iteration-count: 4;
-*/	
-}
-#par-box4 h2{
-	animation: about-tom 2s ease-in-out 0s 1;
-/*	animation-iteration-count: 4;
-*/	
-}
 
 @keyframes about-tom{
 	0%{
 		opacity: 0;
-		left: 500px;
+		left: 800px;
 	}
 	50%{
 		opacity: .1;
@@ -591,7 +593,7 @@
 	/*    #par-box{display: none}    #prlx_lyr_1{display:none}*/    
 	#meet h2{display:none}   
 	#meet p{
-		margin-top: 9rem;
+		margin-top: 1em;
 		}    
 	}
 @media screen and(max-width: 600px){    
